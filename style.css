@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #455a97;
+  --secondary-color: #c4ae7a;
+  --third-color: #84ab81;
+  --forth-color: #af4b4e;
+  --main-font: "IBM Plex Sans Thai", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+#form-container {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: var(--third-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}

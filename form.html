@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ข้อมูลสำหรับแผนที่นิเวศหมอลำ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="form-container">
+    <h1>กรอกข้อมูลสำหรับแผนที่นิเวศหมอลำ</h1>
+    <form id="dataForm">
+      <div class="step">
+        <label for="type">ประเภท:</label>
+        <select id="type" name="type">
+          <option value="ค่ายเพลง">ค่ายเพลง</option>
+          <option value="เครื่องดนตรี">เครื่องดนตรี</option>
+          <option value="เครื่องเสียง">เครื่องเสียง</option>
+          <option value="จัดเวที">จัดเวที</option>
+          <option value="ชุด">ชุด</option>
+          <option value="นักเขียน">นักเขียน</option>
+          <option value="ปราชญ์ชาวบ้าน">ปราชญ์ชาวบ้าน</option>
+          <option value="รับผลิตสื่อ">รับผลิตสื่อ</option>
+          <option value="วงดนตรี">วงดนตรี</option>
+          <option value="ศิลปินแห่งชาติ">ศิลปินแห่งชาติ</option>
+          <option value="สถาบันความรู้หมอลำ">สถาบันความรู้หมอลำ</option>
+          <option value="หมอลำ">หมอลำ</option>
+          <option value="ทางเครื่อง">ทางเครื่อง</option>
+          <option value="ออกแบบการแสดง">ออกแบบการแสดง</option>
+        </select>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name" required />
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="contact">ช่องทางติดต่อ:</label>
+        <input type="text" id="contact" name="contact" required />
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="details">รายละเอียด:</label>
+        <textarea id="details" name="details" required></textarea>
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="lat">ละติจูด:</label>
+        <input type="number" step="0.000001" id="lat" name="lat" required />
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="long">ลองจิจูด:</label>
+        <input type="number" step="0.000001" id="long" name="long" required />
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="button" class="next">ถัดไป</button>
+      </div>
+
+      <div class="step">
+        <label for="link">ลิงค์:</label>
+        <input type="url" id="link" name="link" required />
+        <button type="button" class="prev">ย้อนกลับ</button>
+        <button type="submit">ส่งข้อมูล</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
