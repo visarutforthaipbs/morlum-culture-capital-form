@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
         link: document.getElementById('link').value
       };
     
-      // Send form data to server (replace URL with your server endpoint)
-      fetch('https://your-server-endpoint/api/save-data', {
+      // Send form data to Google Sheet
+      fetch('https://script.google.com/macros/s/AKfyc.../exec', { // Replace with your Google Apps Script URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
